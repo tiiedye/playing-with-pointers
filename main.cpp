@@ -3,7 +3,7 @@
 using namespace std;
 
 int *apply_all(const int *const arr1, size_t size1, const int const* arr2, size_t size2);
-void print(const int *const array, const int size);
+void print(const int *const arr, const int size);
 
 int main() {
     const size_t array1_size {5};
@@ -37,7 +37,17 @@ int *apply_all(const int* const arr1, size_t size1, const int *const arr2, size_
     for (size_t i{0}; i < size2; ++i) {
         for(size_t j{0}; j < size1; ++j) {
             new_array[pos] = arr1[j] * arr[2];
-            ++pos
+            ++pos;
         }
     }
+}
+
+void print(const int *const arr, const int size) {
+    cout << "[ ";
+
+    for (size_t k{0}; k < size; ++k) {
+        cout << arr[k] << " ";
+    }
+    
+    cout << "]" << endl;
 }
