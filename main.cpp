@@ -27,13 +27,15 @@ int main() {
     cout << "Result: ";
     print(results, results_size);
     
+    delete [] results;
     cout << endl;
-
     return 0;
 }
 
+
+// function definitions
 int *apply_all(const int* const arr1, size_t size1, const int *const arr2, size_t size2) {
-    int *new_array{};
+    int *new_array {};
     new_array = new int[size1 * size2];
 
     int pos {0};
@@ -43,6 +45,7 @@ int *apply_all(const int* const arr1, size_t size1, const int *const arr2, size_
             ++pos;
         }
     }
+    return new_array;
 }
 
 void print(const int *const arr, size_t size) {
