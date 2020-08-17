@@ -1,7 +1,7 @@
 ![made-with-VSCode](https://img.shields.io/badge/Made%20With-VS%20Code-blue)  ![Using-CPlusPlus](https://img.shields.io/badge/Using-C%2B%2B-ff69b4)
 
 # Playing with Pointers
-...
+A really simple pointer exercise that multiplies the values in one array by the values in another array, and creates a third array that holds the results. The program then displays all three arrays.
 
 <img src="./assets/screenshot.png"
      alt="Img"
