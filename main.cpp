@@ -36,7 +36,7 @@ int *apply_all(const int* const arr1, size_t size1, const int *const arr2, size_
     int pos {0};
     for (size_t i{0}; i < size2; ++i) {
         for(size_t j{0}; j < size1; ++j) {
-            new_array[pos] = arr1[j] * arr[2];
+            new_array[pos] = arr1[j] * arr2[i];
             ++pos;
         }
     }
@@ -48,6 +48,6 @@ void print(const int *const arr, const int size) {
     for (size_t k{0}; k < size; ++k) {
         cout << arr[k] << " ";
     }
-    
+
     cout << "]" << endl;
 }
